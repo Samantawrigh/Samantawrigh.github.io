@@ -1,0 +1,125 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'Roboto-Light';
+    src: url('Roboto/Roboto-Light.ttf');
+}
+
+body {
+    font-family: 'Roboto-Light', sans-serif;
+    font-weight: 200;
+}
+
+.myTitle {
+    margin-left: 660px;
+    margin-bottom: 196px;
+    font-size: 21px;
+    display: flex;
+    color: rgb(255, 255, 255);
+}
+
+h1 {
+    display: none;
+}
+
+.firstPart {
+    font-weight: normal;
+}
+
+.titleWithOffer {
+    margin-left: 223px;
+}
+
+.firstPartOfTheOffer {
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: rgb(255, 255, 255);
+}
+
+.secondPartOfTheOffer {
+    font-size: 44px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: rgb(255, 255, 255);
+}
+
+/*Селектор, который изменяет размер
+ шрифта и изменяет отступы сверху и снизу */
+.thirdPartOfTheOffer {
+    font-size: 14px;
+    margin-top: 0;
+    padding-bottom: 250px;
+    color: rgb(255, 255, 255);
+}
+
+.secondTitleWithOffer {
+    margin-top: 70px;
+    display: flex;
+    margin-left: 232px;
+    margin-bottom: 35px;
+}
+
+.secondTitleWithOffer h2 {
+    font-size: 30px;
+    font-weight: lighter;
+    margin-right: 62px;
+    margin-top: 0;
+
+}
+
+.secondTitleWithOffer p {
+    margin-top: 0;
+    color: rgb(151, 151, 151);
+
+}
+
+.photo {
+    display: flex;
+    margin-left: 232px;
+
+
+}
+
+.firstImg {
+    margin-right: 23px;
+}
+
+.secondImg {
+    margin-bottom: 16px;
+}
+
+.thirdTitleWithOffer {
+    margin-top: 106px;
+    color: rgb(255, 255, 255);
+    padding-top: 98px;
+    padding-bottom: 100px;
+}
+
+.thirdTitleWithOffer h2 {
+    font-size: 17px;
+    font-weight: lighter;
+    margin-bottom: 32px;
+    margin-left: calc(50% - 65px);
+    border: 1px solid;
+    display: inline-block;
+    padding: 0 16px 0;
+}
+
+.thirdTitleWithOffer p {
+    font-size: 14px;
+    margin-left: auto;
+    text-align: center;
+}
+
+.firstSection {
+    background-image: url("img/Background2.jpg");
+    background-size: cover;
+}
+
+.thirdSection{
+    background-image: url("img/Background1.jpg");
+}
