@@ -1,0 +1,441 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  font-style: normal;
+  background-color: #f2f2f2;
+}
+
+.wrapper {
+  width: calc(100vw - 80px);
+  margin: auto;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(119, 119, 119, 0.744);
+}
+
+.icon {
+  display: inline;
+  background-color: blue;
+  padding: 20px;
+  opacity: 0.9;
+}
+
+.mainLogo {
+  position: absolute;
+  left: calc(50vw - 70px);
+  top: 0;
+  width: 140px;
+}
+
+.navBar {
+  display: flex;
+  list-style-type: none;
+  text-decoration: none;
+  justify-content: space-between;
+  padding: 20px 70px;
+}
+
+.navBar a {
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.navBar :hover {
+  color: #81b3d1;
+}
+
+.navBar :active {
+  color: #b2b2b2;
+}
+
+.imageSection {
+  height: 565px;
+  background-image: url(img/MountainsBckGrnd.png);
+  background-size: cover;
+}
+
+.backDecor {
+  background-image: url(img/whiteFigures.png);
+  background-size: 100% 100%;
+  z-index: 100;
+  position: absolute;
+  top: 576px;
+  height: 47px;
+  width: calc(100vw - 80px);
+}
+
+.imageSection .logoIntro {
+  position: relative;
+  width: 100%;
+  top: 6%;
+  left: 20px;
+}
+
+.sign {
+  margin-top: 76px;
+  margin-left: calc(50% - 206px);
+}
+
+.blockOfText {
+  margin-top: 64px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+}
+
+.blockOfText h1 {
+  font-size: 21px;
+}
+
+.blockOfText p {
+  margin-top: 29px;
+  font-size: 14px;
+}
+
+.blockOfText button {
+  background: none;
+  border: none;
+  font-size: 21px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.reason {
+  padding-top: 48px;
+  padding-bottom: 63px;
+  width: 400px;
+  height: 279px;
+  background-color: #81b3d1;
+  color: white;
+  flex-shrink: 0;
+}
+
+.firstBlockImage {
+  background-image: url(img/BeautifulViewFromAriz.png);
+}
+
+.secondBlockImage {
+  background-image: url(img/devilsBridge.png);
+}
+
+.blockImage {
+  height: 279px;
+  width: 100%;
+  margin-top: 64px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.block {
+  display: flex;
+}
+
+.listOfAdvantages {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 86px;
+  margin-right: 86px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.listOfAdvantages img {
+  height: 75px;
+  margin-bottom: 30px;
+}
+
+.listOfAdvantages h3 {
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+#secondReason {
+  margin-bottom: 0;
+}
+
+.otherReasons {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 86px 60px 86px;
+  background-color: #eeeeee;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.otherReasons h1 {
+  font-size: 21px;
+}
+
+.otherReasons p {
+  margin-top: 29px;
+  font-size: 14px;
+}
+
+footer {
+  height: 120px;
+  padding-top: 30px;
+  padding-bottom: 37px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fafcf7;
+
+}
+
+.contacts {
+  font-size: 21px;
+  font-weight: bold;
+  margin-left: 124px;
+}
+
+
+.socialMedia {
+  display: flex;
+}
+
+.iconWrapper {
+  display: flex;
+  background-color: #81b3d1;
+  width: 47px;
+  height: 48px;
+  align-items: center;
+  margin-right: 6px;
+  fill: white;
+  padding-left: 15px;
+}
+
+div#you {
+  padding-left: 13px;
+}
+
+svg {
+  background: transparent;
+}
+
+.iconWrapper:hover {
+  background-color: #669dc0;
+
+}
+
+.iconWrapper:active {
+  background-color: #5495bd;
+  fill: #88b5d1;
+}
+
+#youtubeIcon {
+  padding-left: calc(50% - 9px);
+}
+
+.designLogo {
+  display: flex;
+  align-items: center;
+}
+
+.designLogo p {
+  margin-right: 6px;
+}
+
+.designLogo svg {
+  margin-right: 104px;
+}
+
+.designLogo svg:hover {
+  fill: #81b3d1;
+}
+
+.designLogo svg:active {
+  fill: #bdbbbb;
+}
+
+.modalWindow {
+  width: 560px;
+  height: 480px;
+  position: absolute;
+  background-color: white;
+  top: 2240px;
+  left: calc(50vw - 280px);
+  /* display: none; */
+}
+
+.modalWindowTitle {
+  display: flex;
+  height: 85px;
+  align-items: center;
+  text-transform: uppercase;
+  background-color: #756357;
+}
+
+.modalWindow h2 {
+  color: white;
+  margin: auto;
+}
+
+.numberOfAdultsAndChildren {
+  display: flex;
+  margin-bottom: 75px;
+}
+
+#leavingAdult {
+  background-color: #f1f1f1;
+  text-align: center;
+  width: 30px;
+  height: 40px;
+  border: none;
+}
+
+#leavingChildren {
+  flex-grow: 1;
+  background-color: #f1f1f1;
+  max-width: 30px;
+  text-align: center;
+  height: 40px;
+  border: none;
+
+}
+
+.modalWindowElements {
+  display: flex;
+  flex-direction: column;
+}
+
+.minusBtn {
+  border: none;
+  width: 32px;
+  height: 38px;
+  color: #a9a9a9;
+}
+
+.minusBtn:hover {
+  color: black;
+}
+
+.minusBtn:active {
+  color: #81b3d1;
+}
+
+.plusBtn {
+  border: none;
+  width: 32px;
+  height: 38px;
+  color: #a9a9a9;
+}
+
+.plusBtn:hover {
+  color: black;
+}
+
+.plusBtn:active {
+  color: #81b3d1;
+}
+
+.formSubmitBtn {
+  width: 100%;
+  border: none;
+  height: 58px;
+  background-color: #81b3d1;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.formSubmitBtn:hover {
+  background-color: #669dc0;
+}
+
+.formSubmitBtn:active {
+  background-color: #5495bd;
+  color: #88b5d1;
+}
+
+.modalWindowBody {
+  height: 100%;
+  padding: 56px 60px 56px 55px;
+}
+
+.datePartsFromModal {
+  display: flex;
+  margin-bottom: 30px;
+  direction: none;
+  align-items: center;
+
+}
+
+.datePartsFromModal label {
+  flex-grow: 1;
+  margin-right: 20px;
+}
+
+label {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.datePartsFromModal input {
+  padding-left: 10px;
+  width: calc(100% - 112px);
+  height: 38px;
+  border: none;
+  background-color: #f1f1f1;
+}
+
+input::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+
+.adultsLabel {
+  margin-right: 40px;
+}
+
+.childrenLabel {
+  margin-right: 40px;
+}
+
+
+
+.buttonGroup {
+  /* padding: 9px; */
+  background-color: #f1f1f1;
+}
+
+/* 
+.buttonGroup:first-child {
+  margin-right: 50px;
+} */
+
+#firstPartButtonGroup {
+  margin-right: 50px;
+}
+
+
+.logicalPart {
+  display: flex;
+  align-items: center;
+}
+
+#btnForModalWindow:hover {
+  background-color: #756357;
+  color: white;
+}
+
+#btnForModalWindow:active {
+  background-color: #503d32;
+  color: #857870;
+}
+
+#btnForModalWindow {
+  padding: 20px;
+}
+
+.modalDis {
+  display: none;
+}
