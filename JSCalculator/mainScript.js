@@ -1,3 +1,4 @@
+let counter=0;
 document.addEventListener("DOMContentLoaded",function(){
 const oneB = document.getElementById("oneB");
 const twoB = document.getElementById("twoB");
@@ -11,7 +12,6 @@ const result = document.getElementById("result");
 let res1;
 let res2;
 let res3;
-let counter=0;
 
 document.addEventListener("keydown", function(event){
     console.log(event.key);
@@ -106,3 +106,11 @@ equalsB.addEventListener("click",function(){
     result.textContent = res3;
     });
 });
+
+function addBtnValue(value){
+    if(counter<6){
+    console.log(counter);
+    result.textContent +=value;
+    counter +=1;
+    }
+}
