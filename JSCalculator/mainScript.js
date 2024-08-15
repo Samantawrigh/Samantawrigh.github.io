@@ -1,5 +1,4 @@
 let counter=0;
-let isDotExists=
 document.addEventListener("DOMContentLoaded",function(){
 const multiplyB = document.getElementById("multiplyB");
 const plusB = document.getElementById("plusB");
@@ -61,47 +60,50 @@ document.addEventListener("keydown", function(event){
 
 multiplyB.addEventListener("click",function(){
     num1.textContent = result.textContent;
-    result.textContent="";
+    clearResult();
     operator = multiplyB.textContent;
     });
 
 plusB.addEventListener("click",function(){
     num1.textContent = result.textContent;
-    result.textContent="";
+    clearResult();
     operator = plusB.textContent;
    // res3 =  parseInt(res1)+ parseInt(res2);
    // console.log(res3);
     });
 minusB.addEventListener("click",function(){
     num1.textContent = result.textContent;
-    result.textContent="";
+    clearResult();
     operator = minusB.textContent;
     //res3 = parseInt(res1)-parseInt(res2);
         });
 divideB.addEventListener("click",function(){
     num1.textContent = result.textContent;
-    result.textContent="";
+    clearResult();
     operator =divideB.textContent;
      });
 equalsB.addEventListener("click",function(){
     if(num1.textContent!=""){
+        let firstNum = parseFloat(num1.textContent).toPrecision(5);
+        let secondNum = parseFloat(result.textContent).toPrecision(5);
         if(operator=="+"){
-            res3 =  parseFloat(num1.textContent)+ parseFloat(result.textContent);
+            res3 =  firstNum + secondNum;
         }
         if(operator=="-"){
-            res3 = parseFloat(num1.textContent) - parseFloat(result.textContent);
+            res3 = firstNum - secondNum;
         }
         if(operator=="X"){
-            res3 = parseFloat(num1.textContent) * parseFloat(result.textContent);
+            res3 = firstNum * secondNum;
         }
         if(operator=="/"){
-            res3 = parseFloat(num1.textContent) / parseFloat(result.textContent);
+            res3 = firstNum / secondNum;
         }
         console.log("результат: " + res3);
         console.log("число 1: " + num1.textContent);
         console.log("число 2: " + result.textContent);
         console.log("оператор: " + operator);
-        result.textContent = res3;
+        result.textContent = res3.toFixed(5);
+        num1.textContent = "";
     }
     });
 });
@@ -110,7 +112,7 @@ function addBtnValue(value){
     if(counter<6){
         console.log(counter);
         result.textContent +=value;
-        counter +=1;
+        counter+=1;
     }
 }
 
@@ -124,10 +126,9 @@ function addDot(){
 }   
 
 function AC(){
-    result.textContent = "";
+    clearResult();
     num1.textContent = "";
     operator = "";
-    counter = 0;
 }
 
 function makeOpposite(){
@@ -139,4 +140,9 @@ function makeOpposite(){
             result.textContent=result.textContent.slice(1);
         }
     }
+}
+
+function clearResult(){
+    result.textContent = "";
+    counter = 0;
 }
