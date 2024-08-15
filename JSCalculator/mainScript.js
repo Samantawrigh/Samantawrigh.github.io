@@ -68,14 +68,11 @@ plusB.addEventListener("click",function(){
     num1.textContent = result.textContent;
     clearResult();
     operator = plusB.textContent;
-   // res3 =  parseInt(res1)+ parseInt(res2);
-   // console.log(res3);
     });
 minusB.addEventListener("click",function(){
     num1.textContent = result.textContent;
     clearResult();
     operator = minusB.textContent;
-    //res3 = parseInt(res1)-parseInt(res2);
         });
 divideB.addEventListener("click",function(){
     num1.textContent = result.textContent;
@@ -84,10 +81,11 @@ divideB.addEventListener("click",function(){
      });
 equalsB.addEventListener("click",function(){
     if(num1.textContent!=""){
-        let firstNum = parseFloat(num1.textContent).toPrecision(5);
-        let secondNum = parseFloat(result.textContent).toPrecision(5);
+        let firstNum = Number(parseFloat(num1.textContent).toPrecision(5));
+        let secondNum = Number(parseFloat(result.textContent).toPrecision(5));
         if(operator=="+"){
-            res3 =  firstNum + secondNum;
+            res3 = firstNum + secondNum;
+            console.log(res3);
         }
         if(operator=="-"){
             res3 = firstNum - secondNum;
