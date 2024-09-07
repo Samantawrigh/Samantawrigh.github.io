@@ -7,6 +7,7 @@ const equalsB= document.getElementById("equalsB");
 const num1 = document.getElementById("num1");
 const result = document.getElementById("result");
 const divideB = document.getElementById("divideB");
+const percentB = document.getElementById("percentB");
 
 
 let res3;
@@ -57,28 +58,28 @@ document.addEventListener("keydown", function(event){
         }
             }
 });
-
+percentB.addEventListener("click",function(){
+    getNum1AndOperator(percentB);  
+    console.log("test1" + percentB.textContent)
+});
 multiplyB.addEventListener("click",function(){
-    num1.textContent = result.textContent;
-    clearResult();
-    operator = multiplyB.textContent;
-    });
-
+    getNum1AndOperator(multiplyB);    
+});
 plusB.addEventListener("click",function(){
-    num1.textContent = result.textContent;
-    clearResult();
-    operator = plusB.textContent;
-    });
+    getNum1AndOperator(plusB);
+});
 minusB.addEventListener("click",function(){
-    num1.textContent = result.textContent;
-    clearResult();
-    operator = minusB.textContent;
-        });
+    getNum1AndOperator(minusB);  
+});
 divideB.addEventListener("click",function(){
+    getNum1AndOperator(divideB);  
+});
+function getNum1AndOperator(operatorB){
     num1.textContent = result.textContent;
     clearResult();
-    operator =divideB.textContent;
-     });
+    operator = operatorB.textContent;
+    console.log("test2" + operatorB.textContent);
+}
 equalsB.addEventListener("click",function(){
     if(num1.textContent!=""){
         let firstNum = Number(parseFloat(num1.textContent).toPrecision(5));
@@ -93,17 +94,22 @@ equalsB.addEventListener("click",function(){
         if(operator=="X"){
             res3 = firstNum * secondNum;
         }
-        if(operator=="/"){
+        if(operator=="/"||operator=="%"){
             res3 = firstNum / secondNum;
         }
         console.log("результат: " + res3);
         console.log("число 1: " + num1.textContent);
         console.log("число 2: " + result.textContent);
         console.log("оператор: " + operator);
-        result.textContent = res3.toFixed(5);
+        //result.textContent = res3.toFixed(5);
+        result.textContent = formatNum(res3);
         num1.textContent = "";
     }
     });
+    
+    function formatNum(num){
+        return parseFloat(num.toPrecision(6).toString())
+    }
 });
 
 function addBtnValue(value){
@@ -144,3 +150,5 @@ function clearResult(){
     result.textContent = "";
     counter = 0;
 }
+
+

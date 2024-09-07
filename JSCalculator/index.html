@@ -24,7 +24,7 @@
         <div class="buttons">
             <div class="btn grey" onclick="AC()">ac</div>
             <div class="btn grey" onclick="makeOpposite()">+/-</div>
-            <div class="btn grey">%</div>
+            <div class="btn grey" id="percentB">%</div>
             <div class="btn orange" id="divideB">/</div>
             <div class="btn" onclick="addBtnValue(7)">7</div>
             <div class="btn" onclick="addBtnValue(8)">8</div>
@@ -43,7 +43,8 @@
             <div class="btn orange" id="equalsB">=</div>
         </div>
     </div>
-    <div style="width: 350px; height: 100px; background: gray; margin: auto; font-size: 4rem; text-align: center;">
+    <div
+        style="display: none; width: 350px; height: 100px; background: gray; margin: auto; font-size: 4rem; text-align: center;">
         <p class="num1" id="num1"></p>
     </div>
 </body>
