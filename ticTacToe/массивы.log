@@ -1,0 +1,119 @@
+log.js:15 (Glean.core.Upload.PingUploadManager) Ping d95d2b44-2acb-4241-b1cc-3bd0a5a24d04 successfully sent 200.
+log.js:15 (Glean.core.Upload.PingUploadManager) Ping 31edc23e-2587-4720-92a8-38e5850c3de6 successfully sent 200.
+log.js:15 (Glean.core.Upload.PingUploadManager) Ping 480c65b2-cec9-417c-866b-b5da09a759d6 successfully sent 200.
+log.js:15 (Glean.core.Upload.PingUploadManager) Ping 5a20c9da-e661-4ed6-9500-6e036b64c28e successfully sent 200.
+log.js:15 (Glean.core.Upload.PingUploadManager) Ping b007f05d-5ca6-4853-8256-393039244932 successfully sent 200.
+log.js:15 (Glean.core.Upload.PingUploadManager) Ping d62ebe51-8dab-454d-996f-04d2a745177e successfully sent 200.
+Chrome is moving towards a new experience that allows users to choose to browse without third-party cookies.
+Chrome is moving towards a new experience that allows users to choose to browse without third-party cookies.
+Chrome is moving towards a new experience that allows users to choose to browse without third-party cookies.
+Chrome is moving towards a new experience that allows users to choose to browse without third-party cookies.
+Chrome is moving towards a new experience that allows users to choose to browse without third-party cookies.
+Warning: Don’t paste code into the DevTools Console that you don’t understand or haven’t reviewed yourself. This could allow attackers to steal your identity or take control of your computer. Please type ‘allow pasting’ below and hit Enter to allow pasting.
+Warning: Don’t paste code into the DevTools Console that you don’t understand or haven’t reviewed yourself. This could allow attackers to steal your identity or take control of your computer. Please type ‘allow pasting’ below and hit Enter to allow pasting.
+Warning: Don’t paste code into the DevTools Console that you don’t understand or haven’t reviewed yourself. This could allow attackers to steal your identity or take control of your computer. Please type ‘allow pasting’ below and hit Enter to allow pasting.
+Warning: Don’t paste code into the DevTools Console that you don’t understand or haven’t reviewed yourself. This could allow attackers to steal your identity or take control of your computer. Please type ‘allow pasting’ below and hit Enter to allow pasting.
+allow pasting
+    
+VM179:1 Uncaught SyntaxError: Unexpected identifier 'pasting'
+Warning: Don’t paste code into the DevTools Console that you don’t understand or haven’t reviewed yourself. This could allow attackers to steal your identity or take control of your computer. Please type ‘allow pasting’ below and hit Enter to allow pasting.
+'allow pasting'
+'allow pasting'
+const arr = ["первый элемент", "второй элемент", "последний элемент"];
+undefined
+console.log(arr[0]);
+VM235:1 первый элемент
+undefined
+console.log(arr[1])
+VM241:1 второй элемент
+undefined
+const arr1 = ["молоко","колбаса","огурцы"];
+undefined
+console.log (arr1.lenght)
+VM502:1 undefined
+undefined
+console.log(arr1.length);
+VM518:1 3
+undefined
+consele.log(arr1[2]);
+VM572:1 Uncaught ReferenceError: consele is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM572:1
+console.log(arr1[2]);
+VM577:1 огурцы
+undefined
+console.log(arr2[2]);
+VM582:1 Uncaught ReferenceError: arr2 is not defined
+    at <anonymous>:1:13
+(anonymous) @ VM582:1
+const arr2 = ["1","2","3","4","5"];
+undefined
+console.log(arr2[3]);
+VM669:1 4
+undefined
+const array = Array.from(arr2, n=> n+2);
+undefined
+console.log(array);
+VM858:1 (5) ['12', '22', '32', '42', '52']
+undefined
+const array1 = Array.from(arr2, n=> n+2);
+undefined
+const array2 = Array.from(arr2, n=> Number(parseInt(n)) +2);
+undefined
+console.log(arrae);
+VM1035:1 Uncaught ReferenceError: arrae is not defined
+    at <anonymous>:1:13
+(anonymous) @ VM1035:1
+console.log(array);
+VM1044:1 (5) ['12', '22', '32', '42', '52']
+undefined
+console.log(array2);
+VM1052:1 (5) [3, 4, 5, 6, 7]
+undefined
+let board = [[0,0,0],
+            [0,0,0],];
+undefined
+board = [[0,0,0],
+        [0,0,0],
+        [0,0,0]];
+(3) [Array(3), Array(3), Array(3)]
+console.log(board);
+VM1301:1 (3) [Array(3), Array(3), Array(3)]
+undefined
+board = [[0,1,2],
+        [3,4,5],
+        [6,7,8]];
+(3) [Array(3), Array(3), Array(3)]
+console.log(board[0][0]);
+VM1393:1 0
+undefined
+console.log(board[1][1]);
+VM1400:1 4
+undefined
+console.log(board[2][2]);
+VM1407:1 8
+undefined
+board22=9;
+9
+board[2][2]=9;
+9
+for (let i of board) {
+  for (let j of i) {
+    console.log(j);
+  }
+}
+VM1456:3 0
+VM1456:3 1
+VM1456:3 2
+VM1456:3 3
+VM1456:3 4
+VM1456:3 5
+VM1456:3 6
+VM1456:3 7
+VM1456:3 9
+undefined
+board[0][0]=1;
+1
+console.table(board);
+VM1480:1 (index)012(index)012011213452679Array(3)
+undefined

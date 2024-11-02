@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("/Inter/Inter-VariableFont_opsz\,wght.ttf");
+    font-weight: normal;
+}
+
+body {
+    background-color: #3B4761;
+}
+
+.counter {
+    width: 80px;
+    height: 55px;
+    background-color: #353E4B;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.counter p {
+    color: #ffffff;
+    font-size: 36px;
+    font-family: "Inter";
+
+}
+
+.placeholder {
+    background-color: gray;
+    width: 20px;
+    height: 20px;
+    border: 6px solid white;
+}
+
+.cell {
+    width: 180px;
+    height: 180px;
+    border: 3px solid black;
+}
+
+.informationPanel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-left: calc(50% - (548px / 2));
+    width: 548px;
+}
+
+.marker {
+    width: 122px;
+    height: 123px;
+    background-color: #727C91;
+    border-radius: 61px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.board {
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    margin-left: calc(50% - (540px / 2));
+    margin-top: calc(50vh - (540px / 2) - 60px);
+}
+
+.animationCircle {
+    position: absolute;
+    width: 125px;
+    height: 125px;
+    border-radius: 61px;
+    border: 5px solid white;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    background-color: transparent;
+    top: 19px;
+    animation: spin 6s linear infinite;
+}
+
+.animCircleX {
+    left: calc(50% - 146px);
+}
+
+.animCircleO {
+    left: calc(50% + 21px);
+}
+
+.disable {
+    display: none;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
