@@ -104,3 +104,20 @@ body {
         transform: rotate(360deg);
     }
 }
+
+.X {
+    background-image: url(img/playBoard/X.svg);
+}
+
+.O {
+    background-image: url(img/playBoard/O.svg);
+}
+
+.figure {
+    width: 108px;
+    height: 108px;
+    background-size: cover;
+    position: relative;
+    top: 36px;
+    left: 36px
+}
