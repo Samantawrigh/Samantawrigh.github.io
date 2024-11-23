@@ -14,6 +14,11 @@ body {
     background-color: #3B4761;
 }
 
+/* .wrapper {
+    display: flex;
+    flex-direction: column;
+} */
+
 .counter {
     width: 80px;
     height: 55px;
@@ -67,7 +72,7 @@ body {
     display: inline-grid;
     grid-template-columns: auto auto auto;
     margin-left: calc(50% - (540px / 2));
-    margin-top: calc(50vh - (540px / 2) - 60px);
+    margin-top: calc(50vh - (540px / 2));
 }
 
 .animationCircle {
