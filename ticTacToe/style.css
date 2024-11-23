@@ -14,11 +14,6 @@ body {
     background-color: #3B4761;
 }
 
-/* .wrapper {
-    display: flex;
-    flex-direction: column;
-} */
-
 .counter {
     width: 80px;
     height: 55px;
@@ -44,18 +39,44 @@ body {
 }
 
 .cell {
-    width: 180px;
-    height: 180px;
+    width: 25vh;
+    height: 25vh;
     border: 3px solid black;
 }
 
-.informationPanel {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 20px;
-    margin-left: calc(50% - (548px / 2));
-    width: 548px;
+@media (min-height: 10px) and (max-height: 719px) {
+    .informationPanel {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 20px;
+        margin-left: calc(50% - (548px / 2));
+        width: 548px;
+        transform: scale(0.59);
+    }
+}
+
+@media (min-height: 720px) and (max-height: 900px) {
+    .informationPanel {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 20px;
+        margin-left: calc(50% - (548px / 2));
+        width: 548px;
+        transform: scale(0.79);
+    }
+}
+
+@media (min-height: 901px) {
+    .informationPanel {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 20px;
+        margin-left: calc(50% - (548px / 2));
+        width: 548px;
+    }
 }
 
 .marker {
@@ -68,13 +89,6 @@ body {
     justify-content: center;
 }
 
-.board {
-    display: inline-grid;
-    grid-template-columns: auto auto auto;
-    margin-left: calc(50% - (540px / 2));
-    margin-top: calc(50vh - (540px / 2));
-}
-
 .animationCircle {
     position: absolute;
     width: 125px;
@@ -84,9 +98,17 @@ body {
     border-left-color: transparent;
     border-right-color: transparent;
     background-color: transparent;
-    top: 19px;
+    /* top: 12px; */
     animation: spin 6s linear infinite;
 }
+
+.board {
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    margin-left: calc(50% - (3 * 25vh / 2));
+    margin-top: calc(50vh - (3 * 25vh / 2) - 71px);
+}
+
 
 .animCircleX {
     left: calc(50% - 146px);
@@ -119,10 +141,9 @@ body {
 }
 
 .figure {
-    width: 108px;
-    height: 108px;
+    width: 25vh;
+    height: 25vh;
     background-size: cover;
     position: relative;
-    top: 36px;
-    left: 36px
+    transform: scale(0.67);
 }
