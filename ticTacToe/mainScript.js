@@ -29,13 +29,18 @@ function handleClick(event) {
         column=2;   
     }
     // board[row][column]=1;
+    const cell=cells[index];
      if(isX){
         board[row][column]="X";
         isX=false;
+        const divX = cell.querySelector(".X");
+        divX.classList.remove("disable");
      }
      else{
         board[row][column]="O";
         isX=true;
+        const divO = cell.querySelector(".O");
+        divO.classList.remove("disable");
      }
     console.table(board);
 }
